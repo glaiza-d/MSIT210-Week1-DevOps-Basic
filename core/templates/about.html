@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About/title>
-</head> 
-<body>
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
     <h1>This is the About page.</h1>
     <p>Lets explore more about the course.</p>
 
-    <p>Click this link <a href="">Home</a> to access the Home page.</p>
-</body>
-</html>
+    <p>Click this link <a href="{% url 'home' %}">Home</a> to access the Home page.</p>
+{% endblock content %}
