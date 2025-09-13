@@ -1,20 +1,33 @@
-# Python cache files
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
+*.so
 
-# Virtual environment
-venv/
-env/
-ENV/
+# Virtual Environments
 .venv/
-.ENV/
+venv/
+ENV/
+env/
 
-# Environment variables
-.env
-*.env
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
 
-# Database files (if using SQLite)
-*.sqlite3
-*.db
+# Django
+db.sqlite3
+staticfiles/
+media/
 
+# IDEs and Editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
